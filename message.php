@@ -1,3 +1,4 @@
+<?php require 'dbconnect.php'?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -25,7 +26,7 @@
                         <a class="nav-link" href="index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="contact.html" aria-current="page">Contact Us</a>
+                        <a class="nav-link active" href="contact.html" aria-current="page">User Feedback</a>
                     </li>
                 </ul>
                 <form class="d-flex" role="search">
@@ -35,6 +36,15 @@
             </div>
         </div>
     </nav>
+<?php $sql = "INSERT INTO usermessage (
+    email, message) VALUES (email, message)";
+
+if ($conn->query($sql) === TRUE) {
+    echo "New record created successfully";
+  } else {
+    echo "Error: " . $sql . "<br>" . $conn->error;
+  }
+  mysqli_close($conn);?>
     <article class="container-fluid">
         <h1 class="text-center mb-5">Your Message</h1>
         
