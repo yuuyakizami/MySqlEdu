@@ -1,6 +1,27 @@
+<?php
+/* Attempt MySQL server connection. Assuming you are running MySQL
+server with default setting (user 'root' with no password) */
+include 'dbconnect.php';
+ 
+// Escape user inputs for security
+
+$email = $conn->real_escape_string($_REQUEST['email']);
+$message = $conn->real_escape_string($_REQUEST['message']);
+ 
+// Attempt insert query execution
+$sql = "INSERT INTO usermessage (email, message) VALUES ('$email', '$message')";
+if($conn->query($sql) === true){
+    echo "Records inserted successfully.";
+} else{
+    echo "ERROR: Could not able to execute $sql. " . $mysqli->error;
+}
+ 
+// Close connection
+$conn->close();
+?>
 <!DOCTYPE html>
 <html lang="en">
-
+    
 <head>
     <title>MySqlEdu - Contact</title>
     <meta charset="UTF-8">
@@ -37,7 +58,7 @@
     </nav>
     <article class="container-fluid">
         <h1 class="text-center mb-5">Your Message</h1>
-        
+        <p><?php $sql = ""?></p>
     </article>
     <div class="d-flex" style="height: 200px;">
         <div class="vr"></div>
