@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<?php include 'dbconnect.php';?>
+
 <head>
     <title>MySqlEdu - Contact</title>
     <meta charset="UTF-8">
@@ -18,14 +18,14 @@
     <nav class="navbar navbar-expand-lg" role="navigation">
 
         <div class="container-fluid" id="navbarSupportedContent">
-            <a class="navbar-brand" href="index.php">MySqlEdu</a>
+            <a class="navbar-brand" href="index.html">MySqlEdu</a>
             <div class="collapse navbar-collapse">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link" href="index.php">Home</a>
+                        <a class="nav-link" href="index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="contact.php" aria-current="page">Contact Us</a>
+                        <a class="nav-link active" href="contact.html" aria-current="page">Contact Us</a>
                     </li>
                 </ul>
                 <form class="d-flex" role="search">
@@ -36,20 +36,8 @@
         </div>
     </nav>
     <article class="container-fluid">
-        <h1 class="text-center mb-5">Get in Touch</h1>
-        <form clas="container">
-            <div class="mx-auto w-25 form-floating mb-3"> <!-- mb = adding margin bottom-->
-                <input type="email" class="form-control" id="floatingInput" aria-describedby="emailHelp">
-                <label for="floatingInput" class="form-label" placeholder="name@example.com">Email Address:</label>
-                <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-            </div>
-            <div class="mx-auto w-25 mb-3 input-group">
-                <label for="Message1"  class="input-group-text">Message:</label>
-                <textarea  class="form-control" name="Message" id="Message1" placeholder="Leave a comment here"></textarea>
-            </div>
-            <div class="d-flex justify-content-center"> <button type="submit" class="btn btn-primary">Submit</button></div>
-          
-        </form>
+        <h1 class="text-center mb-5">Your Message</h1>
+        
     </article>
     <div class="d-flex" style="height: 200px;">
         <div class="vr"></div>
