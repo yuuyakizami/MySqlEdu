@@ -35,15 +35,6 @@
             </div>
         </div>
     </nav>
-<?php $sql = "INSERT INTO usermessage (
-    email, message) VALUES (email, message)";
-
-if ($conn->query($sql) === TRUE) {
-    echo "New record created successfully";
-  } else {
-    echo "Error: " . $sql . "<br>" . $conn->error;
-  }
-  mysqli_close($conn);?>
     <article class="container-fluid">
         <h1 class="text-center mb-5">Your Message</h1>
         
