@@ -1,3 +1,3 @@
 
 <?php include 'index.html';?>
-<?php require 'dbconnect.php';?>
+<?php require_once 'dbconnect.php';?>
