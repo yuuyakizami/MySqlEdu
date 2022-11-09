@@ -1,2 +1,2 @@
-<?php require 'dbconnect.php';?>
-<?php include 'contact.html';?>
+<?php require 'dbconnect.php'; ?>
+<?php include 'contact.html'; ?>
