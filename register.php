@@ -1,3 +1,5 @@
+<?php require 'mysqli_connect.php';?>
+
 <!DOCTYPE html>
 <html lang="en">
 <title>MySqlEdu - Register</title>
@@ -29,21 +31,35 @@
     </div>
 </div>
 </nav>
-
-
+<?php
+    if ($_SERVER['REQUEST_METHOD'] == 'POST') {                                       //#1
+     require('process-register-page.php');
+    } // End of the main Submit conditional.
+   ?>
 <article class="container-fluid">
         <h1 class="text-center mb-5">Register</h1>
-        <form class="container" method="post" action="validate.php">
+        <form class="container" method="post" action="register-page.php" onsubmit="returnchecked()">
+            <!-- name -->
             <div class="mx-auto w-25 form-floating mb-3"> <!-- mb = adding margin bottom-->
-                <input type="username" name="username" value="" class="form-control" id="floatingInput" aria-describedby="emailHelp">
-                <label for="floatingInput" class="form-label" placeholder="name@example.com">Username</label>
+                <input type="text" maxlength="30" name="name" value="<?php if (isset($_POST['name'])) echo $_POST['name']; ?>" class="form-control" id="floatingInput" required>
+                <label for="floatingInput" class="form-label" placeholder="name@example.com">Example Name</label>
+            </div>
+            <!-- Age -->
+            <div class="mx-auto w-25 form-floating mb-3"> <!-- mb = adding margin bottom-->
+                <input type="number" min="15" max="50" name="age" value="<?php if (isset($_POST['age'])) echo $_POST['age']; ?>" class="form-control" id="floatingInput" required>
+                <label for="floatingInput" class="form-label" placeholder="name@example.com">Example Age</label>
+            </div>
+            <!-- Email -->
+            <div class="mx-auto w-25 form-floating mb-3"> <!-- mb = adding margin bottom-->
+                <input type="email" maxlength="60" name="email" value="<?php if (isset($_POST['email'])) echo $_POST['email']; ?>" class="form-control" id="floatingInput" required>
+                <label for="floatingInput" class="form-label" placeholder="name@example.com">Example Email</label>
             </div>
             <div class="mx-auto w-25 form-floating mb-3"> <!-- mb = adding margin bottom-->
-                <input type="password" name="password" value="" class="form-control" id="floatingInput" aria-describedby="emailHelp">
+                <input type="password"  minlength="8" maxlength="12" name="password" value="<?php if (isset($_POST['password1'])) echo $_POST['password1']; ?>" class="form-control" id="floatingInput">
                 <label for="floatingInput" class="form-label">Password</label>
             </div>
             <div class="d-flex justify-content-center"> 
-                <button type="submit" class="btn btn-primary" name="login" value="Sign In">Login</button>
+                <button type="submit" class="btn btn-primary" name="register" value="Register">Register</button>
             </div>
         </form>
     </article>

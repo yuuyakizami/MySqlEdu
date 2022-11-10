@@ -1,3 +1,2 @@
-
+<?php require 'mysqli_connect.php';?>
 <?php include 'index.html';?>
-<?php require 'dbconnect.php';?>
