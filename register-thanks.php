@@ -16,10 +16,10 @@
 
 <body>
     <!-- Landing Page Header for Home Page -->
-   <?php include 'landing_page_header.php'?> 
+   <?php include 'register-header.php'?> 
  
     <article class="container-fluid">
-        <h1 class="text-center fs-1 fw-bold">Hello This is Our Home Page</h1>
+        <h1 class="text-center fs-1 fw-bold">Thank You</h1>
     </article>
     <div class="d-flex" style="height: 200px;">
         <div class="vr"></div>

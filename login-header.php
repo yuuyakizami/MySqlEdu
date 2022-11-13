@@ -9,6 +9,12 @@
 
                 </ul>
                 <div class="justify-content-end">
+                    <button type="button" class="btn btn-secondary" onclick="location.href = 'login.php'">Erase Entries</button>
+                </div>
+                <div class="justify-content-end">
+                    <button type="button" class="btn btn-secondary" onclick="location.href = 'register-page.php'">Register</button>
+                </div>
+                <div class="justify-content-end">
                     <button type="button" class="btn btn-secondary" onclick="location.href = 'index.php'">Cancel</button>
                 </div>
         </div>

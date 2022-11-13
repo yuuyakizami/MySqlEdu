@@ -1,4 +1,4 @@
-<!-- <?php require 'mysqli_connect.php';?> -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -16,10 +16,10 @@
 
 <body>
     <!-- Landing Page Header for Home Page -->
-   <?php include 'landing_page_header.php'?> 
+   <?php include"members-header.php";?>
  
     <article class="container-fluid">
-        <h1 class="text-center fs-1 fw-bold">Hello This is Our Home Page</h1>
+        <h1 class="text-center fs-1 fw-bold">User Page</h1>
     </article>
     <div class="d-flex" style="height: 200px;">
         <div class="vr"></div>

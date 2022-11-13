@@ -8,7 +8,8 @@
 
             </ul>
             <div class="align-items-end">
-                <button type="button" class="btn btn-secondary" onclick="location.href = 'index.php'">HomePage</button>
+                <button type="button" class="btn btn-secondary" onclick="location.href = 'change-password.php'">Erase Entries</button>
+                <button type="button" class="btn btn-secondary" onclick="location.href = 'logout.php'">Logout</button>
             </div>
         </div>
     </div>

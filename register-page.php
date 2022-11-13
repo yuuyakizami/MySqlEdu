@@ -1,4 +1,4 @@
-<!-- <?php require 'mysqli_connect.php'; ?>z -->
+
 
 <!DOCTYPE html>
 
@@ -35,6 +35,7 @@
 </div>
 </nav> -->
     <?php include 'register-header.php' ?>
+
     <?php
     if ($_SERVER['REQUEST_METHOD'] == 'POST') {                                       //#1
         require('process-register-page.php');
@@ -46,15 +47,21 @@
             <!-- name -->
             <div class="mx-auto w-25 form-floating mb-3">
                 <!-- mb = adding margin bottom-->
-                <input type="text" maxlength="30" name="name" value="<?php if (isset($_POST['name'])) echo $_POST['name']; ?>" class="form-control" id="floatingInput" placeholder="Example Name" required>
+                <input type="text" maxlength="30" name="first_name" value="<?php if (isset($_POST['first_name'])) echo $_POST['first_name']; ?>" class="form-control" id="floatingInput" placeholder="Example First Name" required>
+                <label for="floatingInput" class="form-label" placeholder="name@example.com">Example Name</label>
+            </div>
+             <!-- name -->
+             <div class="mx-auto w-25 form-floating mb-3">
+                <!-- mb = adding margin bottom-->
+                <input type="text" maxlength="30" name="last_name" value="<?php if (isset($_POST['last_name'])) echo $_POST['last_name']; ?>" class="form-control" id="floatingInput" placeholder="Example Last Name" required>
                 <label for="floatingInput" class="form-label" placeholder="name@example.com">Example Name</label>
             </div>
             <!-- Age -->
-            <div class="mx-auto w-25 form-floating mb-3">
+            <!-- <div class="mx-auto w-25 form-floating mb-3"> -->
                 <!-- mb = adding margin bottom-->
-                <input type="number" min="15" max="50" name="age" value="<?php if (isset($_POST['age'])) echo $_POST['age']; ?>" class="form-control" id="floatingInput" placeholder="Example Age" required>
-                <label for="floatingInput" class="form-label" placeholder="name@example.com">Example Age</label>
-            </div>
+                <!-- <input type="number" min="15" max="50" name="age" value="" class="form-control" id="floatingInput" placeholder="Example Age" required> -->
+                <!-- <label for="floatingInput" class="form-label" placeholder="name@example.com">Example Age</label>
+            </div> -->
             <!-- Email -->
             <div class="mx-auto w-25 form-floating mb-3">
                 <!-- mb = adding margin bottom-->
