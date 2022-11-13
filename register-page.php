@@ -1,4 +1,4 @@
-<?php require 'mysqli_connect.php'; ?>
+<!-- <?php require 'mysqli_connect.php'; ?>z -->
 
 <!DOCTYPE html>
 
