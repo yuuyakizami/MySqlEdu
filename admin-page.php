@@ -1,6 +1,6 @@
-<?php include 'dbconnect.php';?>
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <title>MySqlEdu - Home</title>
     <meta charset="UTF-8">
@@ -8,42 +8,18 @@
 
     <!-- Bootstrap link -->
     <!-- CSS only -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg" role="navigation">
-
-        <div class="container-fluid" id="navbarSupportedContent">
-            <a class="navbar-brand" href="index.php">MySqlEdu</a>
-            <div class="collapse navbar-collapse">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="index.php" aria-current="page">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contact.php">Contact Us</a>
-                    </li>
-                    <li class="nav-item ">
-                        <a href="login.php" class="nav-link">Login</a>
-                    </li>
-                </ul>
-                <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
-            </div>
-        </div>
-    </nav>
+    <?php include 'admin-header.php'; ?>
     <article class="container-fluid">
-        <h1 class="text-center fs-1 fw-bold">Hello This is Our Home Page</h1>
+        <h1 class="text-center fs-1 fw-bold">Hello This is Our Admin Page</h1>
     </article>
     <div class="d-flex" style="height: 200px;">
         <div class="vr"></div>
-        </div>
+    </div>
     <!-- <script>
         alert("Hello There");
         console.log("Hello Zairo");
