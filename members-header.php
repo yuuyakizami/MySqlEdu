@@ -7,8 +7,11 @@
 
 
             </ul>
+            <!-- Link for  -->
             <div class="align-items-end">
-                <button type="button" class="btn btn-secondary" onclick="location.href = 'change-password.php'">Erase Entries</button>
+                <!-- Change Password -->
+                <button type="button" class="btn btn-secondary" onclick="location.href = 'change-password.php'">Change Password</button>
+              <!-- Logout -->
                 <button type="button" class="btn btn-secondary" onclick="location.href = 'logout.php'">Logout</button>
             </div>
         </div>

@@ -21,8 +21,7 @@ try {
    if (empty($errors)) { // If everything's OK.                              #1
 // Retrieve the user_id, psword, first_name and user_level for that
 // email/password combination
- $query =
-  "SELECT userid, password, first_name, user_level FROM users WHERE email=?";
+ $query = "SELECT userid, password, first_name, user_level FROM users WHERE email=?";
       $q = mysqli_stmt_init($dbcon);
       mysqli_stmt_prepare($q, $query);
         // bind $id to SQL Statement
@@ -56,8 +55,7 @@ $errors[] = 'button on the header menu';
 }
 }
 if (!empty($errors)) {
-               $errorstring =
-               "Error! <br /> The following error(s) occurred:<br>";
+               $errorstring = "Error! <br /> The following error(s) occurred:<br>";
                foreach ($errors as $msg) { // Print each error.
                        $errorstring .= " $msg<br>\n";
                }

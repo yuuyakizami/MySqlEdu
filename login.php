@@ -17,18 +17,18 @@
 if ($_SERVER['REQUEST_METHOD'] == 'POST')
 {
     require('process-login.php');
-}
+} // End of the main Submit conditional.
 ?>
 
 <article class="container-fluid">
         <h1 class="text-center mb-5">Login</h1>
         <form class="container" method="post" action="login.php" name="loginform" id="loginform">
             <div class="mx-auto w-25 form-floating mb-3"> <!-- mb = adding margin bottom-->
-                <input type="username" name="username" value="" class="form-control" id="floatingInput" aria-describedby="emailHelp">
+                <input type="email" name="email" value="<?php if (isset($_POST['email'])) echo $_POST['email']; ?>" class="form-control" id="floatingInput" aria-describedby="emailHelp">
                 <label for="floatingInput" class="form-label" placeholder="name@example.com">Username</label>
             </div>
             <div class="mx-auto w-25 form-floating mb-3"> <!-- mb = adding margin bottom-->
-                <input type="password" name="password" value="" class="form-control" id="floatingInput" aria-describedby="emailHelp">
+                <input type="password" name="password" value="<?php if (isset($_POST['password'])) echo $_POST['password']; ?>" class="form-control" id="floatingInput" aria-describedby="emailHelp">
                 <label for="floatingInput" class="form-label">Password</label>
             </div>
             <div class="d-flex justify-content-center"> 
