@@ -16,30 +16,40 @@
 </head>
 
 <body>
+    <?php include 'index-header.php'?>
     <!-- Landing Page Header for Home Page -->
-    <?php include 'landing_page_header.php'?>
+    <?php include 'index-menu.php'?>
 
     <article class="container-fluid">
         <h1 class="text-center fs-1 fw-bold">Hello This is Our Home Page</h1>
     </article>
-    <div class="d-flex" style="height: 200px;">
+    <div class="d-flex">
         <div class="vr"></div>
     </div>
 
+    <!-- Left-side Column Menu Section -->
+    <div class="row" style="padding-left:0px;">
+        <nav class="col-sm-2">
+            <ul class="nav nav-pills flex-column">
+                <?php include('index-nav.php');?>
+            </ul>
+        </nav>
+    </div>
+    <!-- Right Side Column Section -->
+    <aside class="col-sm-2">
+        <?php include('info-col.php');?>
+    </aside>
+    <!-- 
     <div id="like_button_container">
 
-    </div>
+    </div> -->
     <!-- <script>
         alert("Hello There");
         console.log("Hello Zairo");
     </script> -->
-
-    <footer class="container d-inline-flex align-bottom">FOOTER
-        <?php error_reporting(E_WARNING| E_ERROR);?>
-        <?php $message = 'hello world zai';
-        echo $message;
-        echo PHP_VERSION;
-        ?>
+    <!-- FOOTER SECTION -->
+    <footer class="jumborton text-center row" style="padding-bottom:1px; padding-top:8px;">
+        <?php include('footer.php');?>
     </footer>
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
     <script>
@@ -56,8 +66,13 @@
     <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
     <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
 
+
+
+    <!-- Footer Content Section -->
+
     <!-- Load our React component. -->
     <script src="like_button.js"></script>
+
 </body>
 
 </html>
