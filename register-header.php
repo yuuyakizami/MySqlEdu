@@ -5,7 +5,7 @@
         <div class="collapse navbar-collapse">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             </ul>
-            <div class="btn-group-vtical btn-group-sm" role="group" aria-label="Button group">
+            <div class="btn-group-vertical btn-group-sm" role="group" aria-label="Button group">
                 <button type="button" class="btn btn-secondary" onclick="location.href ='register-page.php'">Erase Entries</button>
                 <button type="button" class="btn btn-secondary" onclick="location.href = 'index.php'">Cancel</button>
             </div>
