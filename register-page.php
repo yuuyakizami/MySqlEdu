@@ -13,25 +13,7 @@
 </head>
 
 <body>
-    <!-- <nav class="navbar navbar-expand-lg" role="navigation">
 
-<div class="container-fluid" id="navbarSupportedContent">
-    <a class="navbar-brand" href="index.php">MySqlEdu</a>
-    <div class="collapse navbar-collapse">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-                <a class="nav-link" href="index.php">Home</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link active" href="login.php" >Login</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link active" href="register.php" aria-current="page">Register</a>
-            </li>
-</ul>
-    </div>
-</div>
-</nav> -->
     <?php include 'register-header.php' ?>
 
     <?php
@@ -48,18 +30,12 @@
                 <input type="text" maxlength="30" name="first_name" value="<?php if (isset($_POST['first_name'])) echo $_POST['first_name']; ?>" class="form-control" id="floatingInput" placeholder="Example First Name" required>
                 <label for="floatingInput" class="form-label" placeholder="name@example.com">First Name</label>
             </div>
-             <!-- name -->
-             <div class="mx-auto w-25 form-floating mb-3">
+            <!-- name -->
+            <div class="mx-auto w-25 form-floating mb-3">
                 <!-- mb = adding margin bottom-->
                 <input type="text" maxlength="30" name="last_name" value="<?php if (isset($_POST['last_name'])) echo $_POST['last_name']; ?>" class="form-control" id="floatingInput" placeholder="Example Last Name" required>
                 <label for="floatingInput" class="form-label" placeholder="name@example.com">Last Name</label>
             </div>
-            <!-- Age -->
-            <!-- <div class="mx-auto w-25 form-floating mb-3"> -->
-                <!-- mb = adding margin bottom-->
-                <!-- <input type="number" min="15" max="50" name="age" value="" class="form-control" id="floatingInput" placeholder="Example Age" required> -->
-                <!-- <label for="floatingInput" class="form-label" placeholder="name@example.com">Example Age</label>
-            </div> -->
             <!-- Email -->
             <div class="mx-auto w-25 form-floating mb-3">
                 <!-- mb = adding margin bottom-->
@@ -88,6 +64,7 @@
         </form>
     </article>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+
 </body>
 
 </html>

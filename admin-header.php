@@ -13,15 +13,15 @@
             </ul>
             <div class="align-items-end">
                 <!-- Logout -->
-            <button type="button" class="btn btn-secondary" onclick="location.href = 'login.php'">Login</button>
-           <!-- View Students Records -->
-            <button type="button" class="btn btn-secondary" onclick="location.href = 'admin_view_users_.php'">View Students</button>
-           <!-- Search -->
-            <button type="button" class="btn btn-secondary" onclick="location.href = '#'">Search</button>
-            <!-- Address -->
-            <button type="button" class="btn btn-secondary" onclick="location.href = '#'">Address</button>
-            <!-- Register New Password -->
-            <button type="button" class="btn btn-secondary" onclick="location.href = 'register-password.php'">New Password</button>
+                <button type="button" class="btn btn-secondary" onclick="location.href = 'logout.php'">Logout</button>
+                <!-- View Students Records -->
+                <button type="button" class="btn btn-secondary" onclick="location.href = 'admin-view-users.php'">View Students</button>
+                <!-- Search -->
+                <button type="button" class="btn btn-secondary" onclick="location.href = '#'">Search</button>
+                <!-- Address -->
+                <button type="button" class="btn btn-secondary" onclick="location.href = '#'">Address</button>
+                <!-- Register New Password -->
+                <button type="button" class="btn btn-secondary" onclick="location.href = 'register-password.php'">New Password</button>
             </div>
         </div>
     </div>
