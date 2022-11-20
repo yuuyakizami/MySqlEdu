@@ -28,19 +28,19 @@
             <div class="mx-auto w-25 form-floating mb-3">
                 <!-- mb = adding margin bottom-->
                 <input type="text" maxlength="30" name="first_name" value="<?php if (isset($_POST['first_name'])) echo $_POST['first_name']; ?>" class="form-control" id="floatingInput" placeholder="Example First Name" required>
-                <label for="floatingInput" class="form-label" placeholder="name@example.com">Example Name</label>
+                <label for="floatingInput" class="form-label" placeholder="name@example.com">First Name</label>
             </div>
             <!-- name -->
             <div class="mx-auto w-25 form-floating mb-3">
                 <!-- mb = adding margin bottom-->
                 <input type="text" maxlength="30" name="last_name" value="<?php if (isset($_POST['last_name'])) echo $_POST['last_name']; ?>" class="form-control" id="floatingInput" placeholder="Example Last Name" required>
-                <label for="floatingInput" class="form-label" placeholder="name@example.com">Example Name</label>
+                <label for="floatingInput" class="form-label" placeholder="name@example.com">Last Name</label>
             </div>
             <!-- Email -->
             <div class="mx-auto w-25 form-floating mb-3">
                 <!-- mb = adding margin bottom-->
                 <input type="email" maxlength="60" name="email" value="<?php if (isset($_POST['email'])) echo $_POST['email']; ?>" class="form-control" id="floatingInput" placeholder="Example Email" required>
-                <label for="floatingInput" class="form-label" placeholder="name@example.com">Example Email</label>
+                <label for="floatingInput" class="form-label" placeholder="name@example.com">Email Adress</label>
             </div>
             <!-- Password -->
             <div class="mx-auto w-25 form-floating mb-3">
